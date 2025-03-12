@@ -33,6 +33,6 @@ jobs:
     - name: CodeDeploy
       run: |
         aws deploy create-deployment \
-          --application-name deploy \
-          --deployment-group-name Deploy \
+          --application-name 2DAWMayo \
+          --deployment-group-name DeployFinal \
           --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
